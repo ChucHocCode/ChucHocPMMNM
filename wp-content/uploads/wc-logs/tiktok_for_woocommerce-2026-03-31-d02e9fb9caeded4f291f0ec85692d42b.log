@@ -1,0 +1,64 @@
+2026-03-31T03:33:45+00:00 DEBUG tt4b_product_delete: missing access token for tt4b_product_sync
+2026-03-31T03:33:46+00:00 DEBUG tt4b_product_delete: missing access token for tt4b_product_sync
+2026-03-31T03:48:29+00:00 DEBUG POST: https://business-api.tiktok.com/tbp/v2.0/business_profile/disconnect?external_data=
+
+{"business_platform":"WOO_COMMERCE","external_business_id":"tt4b_woocommerce_69aa984f86273"}
+ ajax: no
+2026-03-31T03:48:29+00:00 DEBUG Tt4b_Mapi_Class::tbp_post: Response: 
+
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+Content-Length: 95
+X-Api-Deprecation-Info: API for Business Version 1.3 is now live. To avoid disruption to your business, we recommend you migrate all calls to v1.3 as soon as possible. Please visit our migration guide for more details: https://ads.tiktok.com/marketing_api/docs?id=1740029169927169
+X-Domain-Change-Info: We have moved to the new domain business-api.tiktok.com for API services after the Platform Upgrade on 09/30/2021. Please update all of your requests with the new domain if you haven't done so already. For more information, please visit https://ads.tiktok.com/marketing_api/docs?rid=esb88xalm6m&id=1709207085043713
+X-Tt-Logid: 2026033111482995861F617360913C64C1
+Access-Control-Expose-Headers: x-tt-traceflag,x-tt-logid
+x-tt-trace-host: 01830aa7cdd1a35f73b086c769bf27c4c5e8dec4348a1fb3e5db37a5b5c9f9b0820b3ad5ad922add0fc8fb9942f6b73046cb4ec8f326c25916d28bcbf4ef4f14a82412cc819de541b20328ee476fbc18767fc722585b1043ea30eb0f8e776f2ae2a844bc1ed0b1840dee134c97dd50f927
+x-tt-trace-id: 00-26033111482995861F617360913C64C1-6547BDF825BADFBE-00
+Server: TLB
+X-Origin-Response-Time: 11,23.59.80.204
+X-Akamai-Request-ID: 962f4190.2d3be248
+Expires: Tue, 31 Mar 2026 03:48:29 GMT
+Cache-Control: max-age=0, no-cache, no-store
+Pragma: no-cache
+Date: Tue, 31 Mar 2026 03:48:29 GMT
+X-Cache: TCP_MISS from a23-202-34-231.deploy.akamaitechnologies.com (AkamaiGHost/22.4.4-cf5672731e69c345796af56199edfb50) (-)
+Connection: close
+X-Cache-Remote: TCP_MISS from a23-59-80-204.deploy.akamaitechnologies.com (AkamaiGHost/22.4.4-cf5672731e69c345796af56199edfb50) (-)
+x-tt-trace-tag: id=16;cdn-cache=miss;type=dyn
+Server-Timing: cdn-cache; desc=MISS, edge; dur=35, origin; dur=11
+Server-Timing: inner; dur=7
+X-Parent-Response-Time: 44,23.202.34.231
+
+{"code":40001,"message":"Permission denied.","request_id":"2026033111482995861F617360913C64C1"}
+
+2026-03-31T03:48:29+00:00 DEBUG POST: https://business-api.tiktok.com/tbp/v2.0/shop/connection/disconnect?external_data=
+
+--- EMPTY STRING ---
+ ajax: no
+2026-03-31T03:48:29+00:00 DEBUG Tt4b_Mapi_Class::tts_shop_disconnect: Response: 
+
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+Content-Length: 95
+X-Api-Deprecation-Info: API for Business Version 1.3 is now live. To avoid disruption to your business, we recommend you migrate all calls to v1.3 as soon as possible. Please visit our migration guide for more details: https://ads.tiktok.com/marketing_api/docs?id=1740029169927169
+X-Domain-Change-Info: We have moved to the new domain business-api.tiktok.com for API services after the Platform Upgrade on 09/30/2021. Please update all of your requests with the new domain if you haven't done so already. For more information, please visit https://ads.tiktok.com/marketing_api/docs?rid=esb88xalm6m&id=1709207085043713
+X-Tt-Logid: 2026033111482951AF564599E3C34370D3
+Access-Control-Expose-Headers: x-tt-traceflag,x-tt-logid
+Server-Timing: inner; dur=7
+x-tt-trace-host: 01830aa7cdd1a35f73b086c769bf27c4c582e3e1541d3a5744f1be572230a8888f986cec59e609e30ce0750413b47fe3568604ff3790ee4f931a1d70722262e915e5d72efd459814a64aae0876df08e305a4dd1aee18130d06bf705a05d91c5507
+x-tt-trace-id: 00-26033111482951AF564599E3C34370D3-65DC20014684B6E1-00
+Server: TLB
+Expires: Tue, 31 Mar 2026 03:48:29 GMT
+Cache-Control: max-age=0, no-cache, no-store
+Pragma: no-cache
+Date: Tue, 31 Mar 2026 03:48:29 GMT
+X-Cache: TCP_MISS from a23-202-34-238.deploy.akamaitechnologies.com (AkamaiGHost/22.4.4-cf5672731e69c345796af56199edfb50) (-)
+Connection: close
+x-tt-trace-tag: id=16;cdn-cache=miss;type=dyn
+Server-Timing: cdn-cache; desc=MISS, edge; dur=3, origin; dur=48
+X-Origin-Response-Time: 49,23.202.34.238
+X-Akamai-Request-ID: 42981fa
+
+{"code":40001,"message":"Permission denied.","request_id":"2026033111482951AF564599E3C34370D3"}
+

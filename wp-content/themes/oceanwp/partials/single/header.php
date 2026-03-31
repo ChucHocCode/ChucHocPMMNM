@@ -29,3 +29,5 @@ $heading = apply_filters( 'ocean_single_post_heading', $heading );
 </header><!-- .entry-header -->
 
 <?php do_action( 'ocean_after_single_post_title' ); ?>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXX-X"></script>
+
