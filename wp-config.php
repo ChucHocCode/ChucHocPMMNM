@@ -20,7 +20,11 @@
 
 // ** Database settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
+<<<<<<< HEAD
 define( 'DB_NAME', 'wordpress' );
+=======
+define( 'DB_NAME', 'chuctruong_new' );
+>>>>>>> d6e17f77e0f2793f108ad5e59212c9512f9da475
 
 /** Database username */
 define( 'DB_USER', 'root' );
@@ -90,8 +94,12 @@ define( 'WP_DEBUG', false );
 
 /* Add any custom values between this line and the "stop editing" line. */
 
+<<<<<<< HEAD
 define('WP_HOME','http://localhost:8888/Truong_Thi_Thu_Chuc');
 define('WP_SITEURL','http://localhost:8888/Truong_Thi_Thu_Chuc');
+=======
+
+>>>>>>> d6e17f77e0f2793f108ad5e59212c9512f9da475
 /* That's all, stop editing! Happy publishing. */
 
 /** Absolute path to the WordPress directory. */

@@ -60,7 +60,11 @@
 
 @font-face {
   font-family: "lp-icon";
+<<<<<<< HEAD
   src: url("../src/css/vendor/fonts/lp-icon/lp-icon.woff2?v=44") format("woff2");
+=======
+  src: url("../src/css/vendor/fonts/lp-icon/lp-icon.woff2?v=163") format("woff2");
+>>>>>>> d6e17f77e0f2793f108ad5e59212c9512f9da475
   font-weight: normal;
   font-style: normal;
   font-display: swap;

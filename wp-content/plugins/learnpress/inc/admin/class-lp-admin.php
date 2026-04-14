@@ -800,8 +800,11 @@ if ( ! class_exists( 'LP_Admin' ) ) {
 			require_once LP_PLUGIN_PATH . 'inc/background-process/class-lp-background-query-items.php';
 			include_once 'class-lp-admin-assets.php';
 			LP_Admin_Assets::instance();
+<<<<<<< HEAD
 			include_once 'class-lp-admin-mcp-api-keys.php';
 			LP_Admin_MCP_API_Keys::instance();
+=======
+>>>>>>> d6e17f77e0f2793f108ad5e59212c9512f9da475
 			include_once 'class-lp-admin-dashboard.php';
 			// include_once 'class-lp-admin-tools.php';
 			include_once 'class-lp-admin-ajax.php';

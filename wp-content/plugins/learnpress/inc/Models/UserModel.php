@@ -252,8 +252,11 @@ class UserModel {
 	 * If empty user's first name and last name, it will use the username with uniqid() to generate a slug.
 	 *
 	 * @return string|WP_Error
+<<<<<<< HEAD
 	 * @since 4.3.4
 	 * @version 1.0.1
+=======
+>>>>>>> d6e17f77e0f2793f108ad5e59212c9512f9da475
 	 */
 	public function generate_pretty_slug() {
 		$user_slug_new = '';
@@ -265,7 +268,10 @@ class UserModel {
 				return $existing_slug;
 			}
 
+<<<<<<< HEAD
 			// Generate pretty slug based on first name and last name.
+=======
+>>>>>>> d6e17f77e0f2793f108ad5e59212c9512f9da475
 			$first_name  = $this->get_meta_value_by_key( 'first_name', '' );
 			$last_name   = $this->get_meta_value_by_key( 'last_name', '' );
 			$base_source = trim( "{$first_name} {$last_name}" );
@@ -274,15 +280,21 @@ class UserModel {
 			if ( empty( $base_slug ) ) {
 				// Shuffle username with uniqid to make it more unique and less guessable, get first 10 characters to make slug shorter.
 				$base_slug = substr( str_shuffle( sanitize_title( $this->user_login . uniqid() ) ), 0, 10 );
+<<<<<<< HEAD
 			} else {
 				$base_slug = $base_slug . substr( str_shuffle( uniqid() ), 0, 3 );
+=======
+>>>>>>> d6e17f77e0f2793f108ad5e59212c9512f9da475
 			}
 
 			// Check slug exists.
 			$userModelFind = UserService::instance()->get_user_by_pretty_slug( $base_slug );
 			if ( ! $userModelFind ) {
 				$this->set_meta_value_by_key( self::META_KEY_USER_SLUG, $base_slug );
+<<<<<<< HEAD
 				$user_slug_new = $base_slug;
+=======
+>>>>>>> d6e17f77e0f2793f108ad5e59212c9512f9da475
 			} else {
 				// Regenerate slug by adding random string at the end of base slug until it is unique.
 				$user_slug_new = $this->generate_pretty_slug();

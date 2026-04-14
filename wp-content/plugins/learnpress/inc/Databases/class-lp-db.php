@@ -27,7 +27,10 @@ class LP_Database {
 	public $tb_lp_upgrade_db;
 	public $tb_lp_sessions;
 	public $tb_lp_files;
+<<<<<<< HEAD
 	public $tb_lp_mcp_api_keys;
+=======
+>>>>>>> d6e17f77e0f2793f108ad5e59212c9512f9da475
 	public $tb_thim_cache;
 	private $collate         = '';
 	public $max_index_length = '191';
@@ -61,7 +64,10 @@ class LP_Database {
 		$this->tb_lp_upgrade_db          = $prefix . 'learnpress_upgrade_db';
 		$this->tb_lp_sessions            = $prefix . 'learnpress_sessions';
 		$this->tb_lp_files               = $prefix . 'learnpress_files';
+<<<<<<< HEAD
 		$this->tb_lp_mcp_api_keys        = $prefix . 'learnpress_mcp_api_keys';
+=======
+>>>>>>> d6e17f77e0f2793f108ad5e59212c9512f9da475
 		$this->tb_thim_cache             = $prefix . 'thim_cache';
 		$this->wpdb->hide_errors();
 		$this->set_collate();

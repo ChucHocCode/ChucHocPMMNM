@@ -3,7 +3,11 @@ Contributors: thimpress, tungnx89, nhamdv, nguyenlammanh, tunnhn, phonglq.foobla
 Donate link:
 Tags: elearning, education, course, lms, learning management system
 Tested up to: 6.9
+<<<<<<< HEAD
 Stable tag: 4.3.5
+=======
+Stable tag: 4.3.4
+>>>>>>> d6e17f77e0f2793f108ad5e59212c9512f9da475
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -279,10 +283,13 @@ https://translate.wordpress.org/projects/wp-plugins/learnpress/
 
 == Changelog ==
 
+<<<<<<< HEAD
 = 4.3.5 (2026-04-10) =
 ~ Added: MCP (Model Context Protocol) support for get information courses, curriculum, lessons... with AI.
 ~ Fixed: minor bugs.
 
+=======
+>>>>>>> d6e17f77e0f2793f108ad5e59212c9512f9da475
 = 4.3.4 (2026-03-30) =
 ~ Fixed: security.
 ~ Fixed: style button AI display on Gutenberg edit course screen.

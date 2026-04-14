@@ -371,6 +371,7 @@ class LP_Settings {
 		return $lp_db->check_table_exists( $lp_db->tb_lp_files );
 	}
 
+<<<<<<< HEAD
 	/**
 	 * Check table learnpress_mcp_api_keys is created.
 	 *
@@ -381,6 +382,8 @@ class LP_Settings {
 		return $lp_db->check_table_exists( $lp_db->tb_lp_mcp_api_keys );
 	}
 
+=======
+>>>>>>> d6e17f77e0f2793f108ad5e59212c9512f9da475
 	public static function lp_material_file_types(): array {
 		return array(
 			'txt'      => 'text/plain',

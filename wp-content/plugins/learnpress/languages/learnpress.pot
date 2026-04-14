@@ -2,14 +2,22 @@
 # This file is distributed under the same license as the LearnPress plugin.
 msgid ""
 msgstr ""
+<<<<<<< HEAD
 "Project-Id-Version: LearnPress 4.3.5\n"
+=======
+"Project-Id-Version: LearnPress 4.3.4\n"
+>>>>>>> d6e17f77e0f2793f108ad5e59212c9512f9da475
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/learnpress\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+<<<<<<< HEAD
 "POT-Creation-Date: 2026-04-10T14:11:39+03:00\n"
+=======
+"POT-Creation-Date: 2026-03-30T12:23:51+03:00\n"
+>>>>>>> d6e17f77e0f2793f108ad5e59212c9512f9da475
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: learnpress\n"
@@ -113,7 +121,11 @@ msgstr ""
 #: config/settings/permalink.php:156
 #: inc/admin/sub-menus/class-lp-submenu-settings.php:22
 #: inc/admin/views/addons.php:181
+<<<<<<< HEAD
 #: learnpress.php:819
+=======
+#: learnpress.php:813
+>>>>>>> d6e17f77e0f2793f108ad5e59212c9512f9da475
 msgid "Settings"
 msgstr ""
 
@@ -1081,7 +1093,10 @@ msgid "Text Button"
 msgstr ""
 
 #: config/elementor/course/filter-course-el.php:183
+<<<<<<< HEAD
 #: inc/admin/class-lp-admin-mcp-api-keys-table-list.php:200
+=======
+>>>>>>> d6e17f77e0f2793f108ad5e59212c9512f9da475
 #: inc/admin/views/statistics/courses.php:20
 #: inc/admin/views/statistics/orders.php:20
 #: inc/admin/views/statistics/overview.php:19
@@ -1144,7 +1159,11 @@ msgid "Radius"
 msgstr ""
 
 #: config/elementor/course/filter-course-el.php:353
+<<<<<<< HEAD
 #: inc/admin/class-lp-admin-assets.php:636
+=======
+#: inc/admin/class-lp-admin-assets.php:627
+>>>>>>> d6e17f77e0f2793f108ad5e59212c9512f9da475
 #: inc/admin/views/meta-boxes/order/content-tab-preview-exports-invoice.php:66
 #: inc/TemplateHooks/Course/AdminEditCurriculumTemplate.php:159
 #: inc/TemplateHooks/Course/AdminEditCurriculumTemplate.php:260
@@ -1412,11 +1431,17 @@ msgstr ""
 
 #: config/elementor/instructor/become-a-teacher.php:25
 #: config/elementor/instructor/become-a-teacher.php:55
+<<<<<<< HEAD
 #: inc/admin/class-lp-admin-mcp-api-keys-table-list.php:52
 #: inc/admin/meta-box/fields/list-emails.php:8
 #: inc/admin/meta-box/fields/payment-order.php:9
 #: inc/admin/views/quiz/question-meta.php:18
 #: inc/admin/views/settings/mcp-api-keys-form.php:45
+=======
+#: inc/admin/meta-box/fields/list-emails.php:8
+#: inc/admin/meta-box/fields/payment-order.php:9
+#: inc/admin/views/quiz/question-meta.php:18
+>>>>>>> d6e17f77e0f2793f108ad5e59212c9512f9da475
 #: inc/admin/views/setup/setup-stripe.php:11
 #: inc/TemplateHooks/Admin/AdminEditQuestionTemplate.php:262
 msgid "Description"
@@ -1654,7 +1679,10 @@ msgstr ""
 #: config/profile-tabs.php:64
 #: config/settings/course.php:36
 #: config/settings/profile.php:8
+<<<<<<< HEAD
 #: inc/admin/settings/class-lp-settings-advanced.php:34
+=======
+>>>>>>> d6e17f77e0f2793f108ad5e59212c9512f9da475
 #: inc/admin/settings/class-lp-settings-emails.php:63
 #: inc/admin/settings/class-lp-settings-general.php:18
 #: inc/admin/settings/class-lp-settings-payments.php:52
@@ -2839,6 +2867,7 @@ msgstr ""
 msgid "Enable the option, IP of client is identifier user instead $_COOKIE"
 msgstr ""
 
+<<<<<<< HEAD
 #: config/settings/mcp.php:11
 msgid "MCP Integration"
 msgstr ""
@@ -2853,6 +2882,8 @@ msgstr ""
 msgid "Enable Model Context Protocol integration for AI-powered LMS operations. Review all AI actions before executing. <a href=\"%s\" target=\"_blank\" rel=\"noopener noreferrer\">Learn more</a>."
 msgstr ""
 
+=======
+>>>>>>> d6e17f77e0f2793f108ad5e59212c9512f9da475
 #: config/settings/open-ai-admin.php:9
 msgid "Open AI"
 msgstr ""
@@ -2873,7 +2904,11 @@ msgstr ""
 #: config/settings/open-ai-admin.php:26
 #, php-format
 msgid ""
+<<<<<<< HEAD
 "Get your Open AI secret key from <a href=\"%1$s\" target=\"_blank\">here</a>.\r\n"
+=======
+"Get your Open AI secret key from <a href=\"%1$s\" target=\"_blank\">here</a>.\n"
+>>>>>>> d6e17f77e0f2793f108ad5e59212c9512f9da475
 "                            Read more guide from <a href=\"%2$s\" target=\"_blank\">here</a>."
 msgstr ""
 
@@ -3658,23 +3693,38 @@ msgid "Enable default fields"
 msgstr ""
 
 #: config/settings/profile.php:44
+<<<<<<< HEAD
 #: inc/user/lp-user-functions.php:1472
 #: inc/user/lp-user-functions.php:1474
+=======
+#: inc/user/lp-user-functions.php:1443
+#: inc/user/lp-user-functions.php:1445
+>>>>>>> d6e17f77e0f2793f108ad5e59212c9512f9da475
 #: templates/profile/tabs/settings/basic-information.php:33
 msgid "First name"
 msgstr ""
 
 #: config/settings/profile.php:51
+<<<<<<< HEAD
 #: inc/user/lp-user-functions.php:1485
 #: inc/user/lp-user-functions.php:1487
+=======
+#: inc/user/lp-user-functions.php:1456
+#: inc/user/lp-user-functions.php:1458
+>>>>>>> d6e17f77e0f2793f108ad5e59212c9512f9da475
 #: templates/profile/tabs/settings/basic-information.php:39
 msgid "Last name"
 msgstr ""
 
 #: config/settings/profile.php:58
 #: config/settings/profile.php:70
+<<<<<<< HEAD
 #: inc/user/lp-user-functions.php:1498
 #: inc/user/lp-user-functions.php:1500
+=======
+#: inc/user/lp-user-functions.php:1469
+#: inc/user/lp-user-functions.php:1471
+>>>>>>> d6e17f77e0f2793f108ad5e59212c9512f9da475
 #: templates/profile/tabs/settings/basic-information.php:45
 msgid "Display name"
 msgstr ""
@@ -3837,7 +3887,11 @@ msgstr ""
 msgid "Before taking this action, we strongly recommend you backup your site first before proceeding. If you encounter any problems, please do not hesitate to contact our support team. Are you sure to proceed with the update protocol?"
 msgstr ""
 
+<<<<<<< HEAD
 #: inc/admin/class-lp-admin-assets.php:629
+=======
+#: inc/admin/class-lp-admin-assets.php:620
+>>>>>>> d6e17f77e0f2793f108ad5e59212c9512f9da475
 #: inc/class-lp-query-list-table.php:32
 #: inc/TemplateHooks/Table/TableListTemplate.php:150
 msgid "item"
@@ -3845,18 +3899,30 @@ msgid_plural "items"
 msgstr[0] ""
 msgstr[1] ""
 
+<<<<<<< HEAD
 #: inc/admin/class-lp-admin-assets.php:630
 msgid "Create a new"
 msgstr ""
 
 #: inc/admin/class-lp-admin-assets.php:631
+=======
+#: inc/admin/class-lp-admin-assets.php:621
+msgid "Create a new"
+msgstr ""
+
+#: inc/admin/class-lp-admin-assets.php:622
+>>>>>>> d6e17f77e0f2793f108ad5e59212c9512f9da475
 #: inc/admin/views/setup/content.php:50
 #: inc/custom-post-types/quiz.php:172
 #: inc/TemplateHooks/Admin/AdminTemplate.php:113
 msgid "Back"
 msgstr ""
 
+<<<<<<< HEAD
 #: inc/admin/class-lp-admin-assets.php:632
+=======
+#: inc/admin/class-lp-admin-assets.php:623
+>>>>>>> d6e17f77e0f2793f108ad5e59212c9512f9da475
 #: inc/admin/views/course/modal-choose-items.php:54
 #: inc/admin/views/quiz/modal-choose-items.php:52
 #: inc/custom-post-types/quiz.php:173
@@ -3864,6 +3930,7 @@ msgstr ""
 msgid "Selected items"
 msgstr ""
 
+<<<<<<< HEAD
 #: inc/admin/class-lp-admin-assets.php:633
 msgid "Do you want to remove the \"{{ITEM_NAME}}\" item from the course?"
 msgstr ""
@@ -3873,11 +3940,23 @@ msgid "Do you want to move the \"{{ITEM_NAME}}\" item to the trash?"
 msgstr ""
 
 #: inc/admin/class-lp-admin-assets.php:637
+=======
+#: inc/admin/class-lp-admin-assets.php:624
+msgid "Do you want to remove the \"{{ITEM_NAME}}\" item from the course?"
+msgstr ""
+
+#: inc/admin/class-lp-admin-assets.php:625
+msgid "Do you want to move the \"{{ITEM_NAME}}\" item to the trash?"
+msgstr ""
+
+#: inc/admin/class-lp-admin-assets.php:628
+>>>>>>> d6e17f77e0f2793f108ad5e59212c9512f9da475
 #: inc/TemplateHooks/Course/AdminEditCurriculumTemplate.php:160
 #: inc/TemplateHooks/Course/AdminEditCurriculumTemplate.php:261
 msgid "Items"
 msgstr ""
 
+<<<<<<< HEAD
 #: inc/admin/class-lp-admin-assets.php:639
 msgid "The course sale price must be less than the regular price"
 msgstr ""
@@ -3895,6 +3974,25 @@ msgid "The sale end date must be after the sale start date"
 msgstr ""
 
 #: inc/admin/class-lp-admin-assets.php:643
+=======
+#: inc/admin/class-lp-admin-assets.php:630
+msgid "The course sale price must be less than the regular price"
+msgstr ""
+
+#: inc/admin/class-lp-admin-assets.php:631
+msgid "The course price must be greater than the sale price"
+msgstr ""
+
+#: inc/admin/class-lp-admin-assets.php:632
+msgid "The sale start date must be before the sale end date"
+msgstr ""
+
+#: inc/admin/class-lp-admin-assets.php:633
+msgid "The sale end date must be after the sale start date"
+msgstr ""
+
+#: inc/admin/class-lp-admin-assets.php:634
+>>>>>>> d6e17f77e0f2793f108ad5e59212c9512f9da475
 msgid "Invalid date"
 msgstr ""
 
@@ -3946,6 +4044,7 @@ msgstr ""
 msgid "Latest updated:"
 msgstr ""
 
+<<<<<<< HEAD
 #: inc/admin/class-lp-admin-mcp-api-keys-table-list.php:53
 msgid "Key Ending"
 msgstr ""
@@ -4041,6 +4140,8 @@ msgstr ""
 msgid "No API keys selected."
 msgstr ""
 
+=======
+>>>>>>> d6e17f77e0f2793f108ad5e59212c9512f9da475
 #: inc/admin/class-lp-admin-menu.php:62
 msgid "View Page Courses"
 msgstr ""
@@ -4119,7 +4220,11 @@ msgstr ""
 msgid "Thanks :)"
 msgstr ""
 
+<<<<<<< HEAD
 #: inc/admin/class-lp-admin.php:908
+=======
+#: inc/admin/class-lp-admin.php:906
+>>>>>>> d6e17f77e0f2793f108ad5e59212c9512f9da475
 msgid "Permalink is only available if the item is already assigned to a course."
 msgstr ""
 
@@ -4465,8 +4570,11 @@ msgid "HTML"
 msgstr ""
 
 #: inc/admin/lp-admin-functions.php:1646
+<<<<<<< HEAD
 #: inc/admin/views/settings/mcp-api-keys-form.php:73
 #: inc/admin/views/settings/mcp-api-keys-form.php:78
+=======
+>>>>>>> d6e17f77e0f2793f108ad5e59212c9512f9da475
 #: inc/TemplateHooks/Admin/AI/AdminEditWithAITemplate.php:342
 #: inc/TemplateHooks/Course/SingleCourseModernLayout.php:369
 msgid "Copy"
@@ -4649,6 +4757,7 @@ msgstr ""
 msgid "Footer text"
 msgstr ""
 
+<<<<<<< HEAD
 #: inc/admin/settings/class-lp-settings-mcp.php:19
 msgid "MCP"
 msgstr ""
@@ -4661,6 +4770,8 @@ msgstr ""
 msgid "This feature requires the MCP Adapter plugin. Please install and activate it to access the settings."
 msgstr ""
 
+=======
+>>>>>>> d6e17f77e0f2793f108ad5e59212c9512f9da475
 #: inc/admin/settings/class-lp-settings-open-ai.php:20
 msgid "LearnPress AI"
 msgstr ""
@@ -4746,7 +4857,11 @@ msgid "Reset Password"
 msgstr ""
 
 #: inc/admin/sub-menus/class-lp-submenu-addons.php:18
+<<<<<<< HEAD
 #: learnpress.php:821
+=======
+#: learnpress.php:815
+>>>>>>> d6e17f77e0f2793f108ad5e59212c9512f9da475
 msgid "Add-ons"
 msgstr ""
 
@@ -4773,12 +4888,20 @@ msgid "LearnPress Settings"
 msgstr ""
 
 #. translators: 1: processed users, 2: generated slugs, 3: skipped users, 4: failed users
+<<<<<<< HEAD
 #: inc/admin/sub-menus/class-lp-submenu-settings.php:74
+=======
+#: inc/admin/sub-menus/class-lp-submenu-settings.php:72
+>>>>>>> d6e17f77e0f2793f108ad5e59212c9512f9da475
 #, php-format
 msgid "User slug generation finished. Processed: %1$d, Generated: %2$d, Skipped: %3$d, Failed: %4$d."
 msgstr ""
 
+<<<<<<< HEAD
 #: inc/admin/sub-menus/class-lp-submenu-settings.php:98
+=======
+#: inc/admin/sub-menus/class-lp-submenu-settings.php:90
+>>>>>>> d6e17f77e0f2793f108ad5e59212c9512f9da475
 msgid "Save settings"
 msgstr ""
 
@@ -5892,6 +6015,7 @@ msgstr ""
 msgid "Add option"
 msgstr ""
 
+<<<<<<< HEAD
 #: inc/admin/views/settings/mcp-api-keys-form.php:25
 msgid "Create MCP API Key"
 msgstr ""
@@ -5936,6 +6060,8 @@ msgstr ""
 msgid "Search keys"
 msgstr ""
 
+=======
+>>>>>>> d6e17f77e0f2793f108ad5e59212c9512f9da475
 #: inc/admin/views/setup/content.php:61
 #: inc/TemplateHooks/UserItem/UserCourseTemplate.php:66
 #: templates/single-course/buttons/continue.php:19
@@ -6901,6 +7027,7 @@ msgstr ""
 msgid "Congrats! You have completed \"%s\"."
 msgstr ""
 
+<<<<<<< HEAD
 #: inc/Ajax/MCP/McpApiKeysAjax.php:35
 msgid "You are not allowed to manage MCP API keys."
 msgstr ""
@@ -6934,6 +7061,8 @@ msgstr ""
 msgid "API key regenerated."
 msgstr ""
 
+=======
+>>>>>>> d6e17f77e0f2793f108ad5e59212c9512f9da475
 #: inc/background-process/class-lp-background-query-items.php:128
 #: inc/background-process/class-lp-background-query-items.php:182
 msgid "No items found!"
@@ -7872,33 +8001,56 @@ msgstr ""
 msgid "Invalid ID!"
 msgstr ""
 
+<<<<<<< HEAD
 #: inc/Databases/class-lp-db.php:863
 #: inc/Databases/class-lp-db.php:925
+=======
+#: inc/Databases/class-lp-db.php:861
+#: inc/Databases/class-lp-db.php:923
+>>>>>>> d6e17f77e0f2793f108ad5e59212c9512f9da475
 #: inc/Databases/DataBase.php:794
 #: inc/Databases/DataBase.php:856
 msgid "Data must be an array!"
 msgstr ""
 
+<<<<<<< HEAD
 #: inc/Databases/class-lp-db.php:871
 #: inc/Databases/class-lp-db.php:921
+=======
+#: inc/Databases/class-lp-db.php:869
+#: inc/Databases/class-lp-db.php:919
+>>>>>>> d6e17f77e0f2793f108ad5e59212c9512f9da475
 #: inc/Databases/DataBase.php:802
 #: inc/Databases/DataBase.php:852
 msgid "Filter must have property all_fields!"
 msgstr ""
 
+<<<<<<< HEAD
 #: inc/Databases/class-lp-db.php:875
 #: inc/Databases/class-lp-db.php:933
+=======
+#: inc/Databases/class-lp-db.php:873
+#: inc/Databases/class-lp-db.php:931
+>>>>>>> d6e17f77e0f2793f108ad5e59212c9512f9da475
 #: inc/Databases/DataBase.php:806
 #: inc/Databases/DataBase.php:864
 msgid "Table name is required!"
 msgstr ""
 
+<<<<<<< HEAD
 #: inc/Databases/class-lp-db.php:879
+=======
+#: inc/Databases/class-lp-db.php:877
+>>>>>>> d6e17f77e0f2793f108ad5e59212c9512f9da475
 #: inc/Databases/DataBase.php:810
 msgid "Key auto increment must be a string!"
 msgstr ""
 
+<<<<<<< HEAD
 #: inc/Databases/class-lp-db.php:929
+=======
+#: inc/Databases/class-lp-db.php:927
+>>>>>>> d6e17f77e0f2793f108ad5e59212c9512f9da475
 #: inc/Databases/DataBase.php:860
 msgid "Invalid where key!"
 msgstr ""
@@ -8157,6 +8309,18 @@ msgstr ""
 msgid "Instructor - New order placed on {{order_date}}"
 msgstr ""
 
+<<<<<<< HEAD
+=======
+#: inc/emails/student/class-lp-email-cancelled-order-user.php:25
+#: inc/emails/student/class-lp-email-completed-order-user.php:29
+#: inc/emails/student/class-lp-email-enrolled-course-user.php:27
+#: inc/emails/student/class-lp-email-finished-course-user.php:26
+#: inc/emails/student/class-lp-email-new-order-user.php:25
+#: inc/emails/student/class-lp-email-processing-order-user.php:22
+msgid "User"
+msgstr ""
+
+>>>>>>> d6e17f77e0f2793f108ad5e59212c9512f9da475
 #: inc/emails/student/class-lp-email-cancelled-order-user.php:26
 msgid "Send an email to the user when the order has been cancelled."
 msgstr ""
@@ -9405,6 +9569,7 @@ msgstr ""
 msgid "The LearnPress webhook process is complete"
 msgstr ""
 
+<<<<<<< HEAD
 #: inc/MCP/Abilities.php:117
 msgid "LearnPress LMS"
 msgstr ""
@@ -9558,6 +9723,8 @@ msgstr ""
 msgid "An internal LearnPress MCP error occurred."
 msgstr ""
 
+=======
+>>>>>>> d6e17f77e0f2793f108ad5e59212c9512f9da475
 #: inc/Models/CourseModel.php:551
 msgid "Evaluate via completed lessons"
 msgstr ""
@@ -9852,7 +10019,11 @@ msgid "You have exceeded the number of retakes."
 msgstr ""
 
 #. translators: 1: user slug
+<<<<<<< HEAD
 #: inc/Models/UserModel.php:329
+=======
+#: inc/Models/UserModel.php:323
+>>>>>>> d6e17f77e0f2793f108ad5e59212c9512f9da475
 #, php-format
 msgid "This user slug \"%s\" already exists."
 msgstr ""
@@ -11895,6 +12066,7 @@ msgstr ""
 msgid "quizzes"
 msgstr ""
 
+<<<<<<< HEAD
 #: inc/user/lp-user-functions.php:330
 msgid "Want to become an instructor?"
 msgstr ""
@@ -11924,6 +12096,37 @@ msgid "Youtube Channel"
 msgstr ""
 
 #: inc/user/lp-user-functions.php:1457
+=======
+#: inc/user/lp-user-functions.php:311
+msgid "Want to become an instructor?"
+msgstr ""
+
+#: inc/user/lp-user-functions.php:916
+msgid "Enter the old password!"
+msgstr ""
+
+#: inc/user/lp-user-functions.php:921
+msgid "The old password is incorrect!"
+msgstr ""
+
+#: inc/user/lp-user-functions.php:928
+msgid "Incorrect confirmation password!"
+msgstr ""
+
+#: inc/user/lp-user-functions.php:1419
+msgid "Facebook Profile"
+msgstr ""
+
+#: inc/user/lp-user-functions.php:1422
+msgid "X Profile"
+msgstr ""
+
+#: inc/user/lp-user-functions.php:1425
+msgid "Youtube Channel"
+msgstr ""
+
+#: inc/user/lp-user-functions.php:1428
+>>>>>>> d6e17f77e0f2793f108ad5e59212c9512f9da475
 msgid "Linkedin Profile"
 msgstr ""
 
@@ -12196,7 +12399,11 @@ msgstr ""
 msgid "Browser User Agent"
 msgstr ""
 
+<<<<<<< HEAD
 #: learnpress.php:820
+=======
+#: learnpress.php:814
+>>>>>>> d6e17f77e0f2793f108ad5e59212c9512f9da475
 msgid "Documentation"
 msgstr ""
 

@@ -694,10 +694,17 @@ class UserCourseModel extends UserItemModel {
 	 *
 	 * @return string
 	 * @since 4.2.7.2
+<<<<<<< HEAD
 	 * @version 1.0.1
 	 */
 	public function get_graduation(): string {
 		return (string) $this->graduation;
+=======
+	 * @version 1.0.0
+	 */
+	public function get_graduation(): string {
+		return $this->graduation;
+>>>>>>> d6e17f77e0f2793f108ad5e59212c9512f9da475
 	}
 
 	/**

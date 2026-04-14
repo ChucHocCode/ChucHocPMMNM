@@ -4,7 +4,11 @@
  * Plugin URI: https://thimpress.com/learnpress
  * Description: LearnPress is a WordPress complete solution for creating a Learning Management System (LMS). It can help you to create courses, lessons and quizzes.
  * Author: ThimPress
+<<<<<<< HEAD
  * Version: 4.3.5
+=======
+ * Version: 4.3.4
+>>>>>>> d6e17f77e0f2793f108ad5e59212c9512f9da475
  * Author URI: http://thimpress.com
  * Requires at least: 6.0
  * Requires PHP: 7.4
@@ -18,7 +22,10 @@ use LearnPress\Ajax\EditQuestionAjax;
 use LearnPress\Ajax\EditQuizAjax;
 use LearnPress\Ajax\LessonAjax;
 use LearnPress\Ajax\LoadContentViaAjax;
+<<<<<<< HEAD
 use LearnPress\Ajax\MCP\McpApiKeysAjax;
+=======
+>>>>>>> d6e17f77e0f2793f108ad5e59212c9512f9da475
 use LearnPress\Ajax\AI\OpenAiAjax;
 use LearnPress\Ajax\ExportOrderCSVAjax;
 use LearnPress\Background\LPBackgroundTrigger;
@@ -28,8 +35,11 @@ use LearnPress\ExternalPlugin\YoastSeo\LPYoastSeo;
 use LearnPress\Gutenberg\GutenbergHandleMain;
 use LearnPress\Ajax\EditCurriculumAjax;
 use LearnPress\Ajax\SendEmailAjax;
+<<<<<<< HEAD
 use LearnPress\MCP\Abilities;
 use LearnPress\MCP\Auth\ApiKeyAuthenticator;
+=======
+>>>>>>> d6e17f77e0f2793f108ad5e59212c9512f9da475
 use LearnPress\Models\CourseModel;
 use LearnPress\Models\UserModel;
 use LearnPress\Shortcodes\Course\FilterCourseShortcode;
@@ -697,8 +707,11 @@ if ( ! class_exists( 'LearnPress' ) ) {
 		 * Initial common hooks
 		 */
 		public function hooks() {
+<<<<<<< HEAD
 			add_action( 'init', array( $this, 'maybe_init_mcp_abilities' ), 20 );
 
+=======
+>>>>>>> d6e17f77e0f2793f108ad5e59212c9512f9da475
 			/**
 			 * Handle lp ajax.
 			 * Set priority after register_post_type to register capabilities for post type of LP.
@@ -714,7 +727,10 @@ if ( ! class_exists( 'LearnPress' ) ) {
 					SendEmailAjax::catch_lp_ajax();
 					OpenAiAjax::catch_lp_ajax();
 					ExportOrderCSVAjax::catch_lp_ajax();
+<<<<<<< HEAD
 					McpApiKeysAjax::catch_lp_ajax();
+=======
+>>>>>>> d6e17f77e0f2793f108ad5e59212c9512f9da475
 
 					do_action( 'learn-press/register-ajax-handlers' );
 				},
@@ -845,6 +861,7 @@ if ( ! class_exists( 'LearnPress' ) ) {
 		}
 
 		/**
+<<<<<<< HEAD
 		 * Conditionally bootstrap MCP abilities.
 		 *
 		 * @return void
@@ -859,6 +876,8 @@ if ( ! class_exists( 'LearnPress' ) ) {
 		}
 
 		/**
+=======
+>>>>>>> d6e17f77e0f2793f108ad5e59212c9512f9da475
 		 * Handle load text domain for LearnPress.
 		 *
 		 * @since 4.2.7.4

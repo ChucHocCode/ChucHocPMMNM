@@ -156,10 +156,17 @@ return array(
 		CREATE TABLE IF NOT EXISTS {$lp_db->tb_lp_files} (
 			file_id bigint(20) unsigned NOT NULL AUTO_INCREMENT,
 			file_name varchar(191) NOT NULL DEFAULT '',
+<<<<<<< HEAD
 			file_type varchar(100) NOT NULL DEFAULT '',
 			item_id bigint(20) unsigned NOT NULL DEFAULT '0',
 			item_type varchar(100) NOT NULL DEFAULT '',
 			method varchar(10) NOT NULL DEFAULT 'upload',
+=======
+			file_type varchar(10) NOT NULL DEFAULT '',
+			item_id bigint(20) unsigned NOT NULL DEFAULT '0',
+			item_type varchar(100) NOT NULL DEFAULT '',
+			method varchar(10) NOT NULL DEFAULT 'upload' CHECK ( method IN ( 'upload', 'external' ) ),
+>>>>>>> d6e17f77e0f2793f108ad5e59212c9512f9da475
 			file_path varchar(255) NOT NULL DEFAULT '',
 			orders int(4) NOT NULL DEFAULT '0',
 			created_at datetime NULL DEFAULT NULL,
@@ -190,6 +197,7 @@ return array(
 			KEY id_status (ID, post_status)
 		) $collate;
 	",
+<<<<<<< HEAD
 	$lp_db->tb_lp_mcp_api_keys        => "
 		CREATE TABLE IF NOT EXISTS {$lp_db->tb_lp_mcp_api_keys} (
 			key_id bigint(20) unsigned NOT NULL AUTO_INCREMENT,
@@ -208,6 +216,8 @@ return array(
 			KEY user_id (user_id)
 		) $collate;
 	",
+=======
+>>>>>>> d6e17f77e0f2793f108ad5e59212c9512f9da475
 	$lp_db->tb_thim_cache             => "
 		CREATE TABLE IF NOT EXISTS {$lp_db->tb_thim_cache} (
 			key_cache VARCHAR (100) NOT NULL UNIQUE,

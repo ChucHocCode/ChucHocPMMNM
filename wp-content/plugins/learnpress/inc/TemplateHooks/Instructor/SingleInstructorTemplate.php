@@ -241,7 +241,11 @@ class SingleInstructorTemplate extends UserTemplate {
 	 *
 	 * @return false|UserModel
 	 * @since 4.2.3.4
+<<<<<<< HEAD
 	 * @version 1.0.3
+=======
+	 * @version 1.0.2
+>>>>>>> d6e17f77e0f2793f108ad5e59212c9512f9da475
 	 */
 	public function detect_instructor_by_page() {
 		$instructor = false;
@@ -260,12 +264,21 @@ class SingleInstructorTemplate extends UserTemplate {
 						$wp_user = get_user_by( 'slug', $instructor_name );
 						// Only allow view instructor when user is administrator or view his/her profile.
 						if ( $wp_user ) {
+<<<<<<< HEAD
 							$userModelBySlug = UserModel::find( $wp_user->ID, true );
 							if ( current_user_can( UserModel::ROLE_ADMINISTRATOR )
 								|| ( $userModelCurrent && $userModelCurrent->get_id() === $wp_user->ID ) ) {
 								$instructor = $userModelBySlug;
 							} elseif ( empty( $userModelBySlug->get_pretty_slug( false ) ) ) {
 								$instructor = $userModelBySlug;
+=======
+							$userModel = UserModel::find( $wp_user->ID, true );
+							if ( current_user_can( UserModel::ROLE_ADMINISTRATOR )
+							     || ( $userModelCurrent && $userModelCurrent->get_id() === $wp_user->ID ) ) {
+								$instructor = $userModelCurrent;
+							} elseif ( empty( $userModel->get_pretty_slug( false ) ) ) {
+								$instructor = $userModel;
+>>>>>>> d6e17f77e0f2793f108ad5e59212c9512f9da475
 							}
 						}
 					}

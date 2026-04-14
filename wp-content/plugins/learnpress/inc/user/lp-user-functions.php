@@ -149,7 +149,11 @@ function learn_press_add_user_roles() {
 		$teacher->add_cap( 'edit_published_' . $course_cap );
 		$teacher->add_cap( 'edit_' . $course_cap );
 		$teacher->add_cap( 'delete_' . $course_cap );
+<<<<<<< HEAD
 		// $teacher->add_cap( 'unfiltered_html' );
+=======
+		//$teacher->add_cap( 'unfiltered_html' );
+>>>>>>> d6e17f77e0f2793f108ad5e59212c9512f9da475
 		if ( $teacher->has_cap( 'unfiltered_html' ) ) {
 			$teacher->remove_cap( 'unfiltered_html' );
 		}
@@ -174,8 +178,11 @@ function learn_press_add_user_roles() {
 	// administrator
 	$admin = get_role( 'administrator' );
 	if ( $admin ) {
+<<<<<<< HEAD
 		$admin->add_cap( 'lp_mcp_access' );
 
+=======
+>>>>>>> d6e17f77e0f2793f108ad5e59212c9512f9da475
 		$admin->add_cap( 'read_private_' . $course_cap );
 		$admin->add_cap( 'delete_' . $course_cap );
 		$admin->add_cap( 'delete_published_' . $course_cap );
@@ -210,6 +217,7 @@ function learn_press_add_user_roles() {
 	}
 }
 
+<<<<<<< HEAD
 /**
  * Remove capabilities added for MCP integration.
  *
@@ -224,6 +232,9 @@ function learn_press_remove_mcp_capabilities() {
 }
 /*
 function learn_press_current_user_is( $check_type = null ) {
+=======
+/*function learn_press_current_user_is( $check_type = null ) {
+>>>>>>> d6e17f77e0f2793f108ad5e59212c9512f9da475
 	global $current_user;
 	$user_roles = $current_user->roles;
 	$user_type  = '';
@@ -239,8 +250,12 @@ function learn_press_current_user_is( $check_type = null ) {
 	return $check_type ? $check_type == $user_type : $user_type;
 }*/
 
+<<<<<<< HEAD
 /*
 function learn_press_user_has_roles( $roles, $user_id = null ) {
+=======
+/*function learn_press_user_has_roles( $roles, $user_id = null ) {
+>>>>>>> d6e17f77e0f2793f108ad5e59212c9512f9da475
 	$has_role = false;
 	if ( ! $user_id ) {
 		$user = wp_get_current_user();
@@ -264,8 +279,12 @@ function learn_press_user_has_roles( $roles, $user_id = null ) {
 	return $has_role;
 }*/
 
+<<<<<<< HEAD
 /*
 function learn_press_current_user_can_view_profile_section( $section, $user ) {
+=======
+/*function learn_press_current_user_can_view_profile_section( $section, $user ) {
+>>>>>>> d6e17f77e0f2793f108ad5e59212c9512f9da475
 	$current_user = wp_get_current_user();
 	$view         = true;
 	if ( $user->get_data( 'user_login' ) != $current_user->user_login && $section == LP_Settings::instance()->get(
@@ -278,8 +297,12 @@ function learn_press_current_user_can_view_profile_section( $section, $user ) {
 	return apply_filters( 'learn_press_current_user_can_view_profile_section', $view, $section, $user );
 }*/
 
+<<<<<<< HEAD
 /*
 function learn_press_profile_tab_quizzes_content( $current, $tab, $user ) {
+=======
+/*function learn_press_profile_tab_quizzes_content( $current, $tab, $user ) {
+>>>>>>> d6e17f77e0f2793f108ad5e59212c9512f9da475
 	learn_press_get_template(
 		'profile/tabs/quizzes.php',
 		array(
@@ -290,8 +313,12 @@ function learn_press_profile_tab_quizzes_content( $current, $tab, $user ) {
 	);
 }*/
 
+<<<<<<< HEAD
 /*
 function learn_press_profile_tab_orders_content( $current, $tab, $user ) {
+=======
+/*function learn_press_profile_tab_orders_content( $current, $tab, $user ) {
+>>>>>>> d6e17f77e0f2793f108ad5e59212c9512f9da475
 	learn_press_get_template(
 		'profile/tabs/orders.php',
 		array(
@@ -351,7 +378,11 @@ add_action( 'register_form', 'learn_press_user_become_teacher_registration_form'
  *
  * @return mixed
  */
+<<<<<<< HEAD
 function learn_press_update_user_item_field( array $fields = array(), $where = false, $update_cache = true, $update_extra_fields_as_meta = false ) {
+=======
+function learn_press_update_user_item_field( array $fields = [], $where = false, $update_cache = true, $update_extra_fields_as_meta = false ) {
+>>>>>>> d6e17f77e0f2793f108ad5e59212c9512f9da475
 	global $wpdb;
 
 	// Table fields format.
@@ -380,8 +411,15 @@ function learn_press_update_user_item_field( array $fields = array(), $where = f
 			if ( 'completed' === $fields['status'] ) {
 				$fields['status'] = 'finished';
 			}
+<<<<<<< HEAD
 		} elseif ( 'finished' === $fields['status'] ) {
 				$fields['status'] = 'completed';
+=======
+		} else {
+			if ( 'finished' === $fields['status'] ) {
+				$fields['status'] = 'completed';
+			}
+>>>>>>> d6e17f77e0f2793f108ad5e59212c9512f9da475
 		}
 	}
 
@@ -392,7 +430,11 @@ function learn_press_update_user_item_field( array $fields = array(), $where = f
 			$data[ $field ] = $value;
 
 			// Do not format the date-time field if it's value is NULL
+<<<<<<< HEAD
 			if ( in_array( $field, array( 'start_time', 'end_time' ) ) && empty( $value ) ) {
+=======
+			if ( in_array( $field, [ 'start_time', 'end_time' ] ) && empty( $value ) ) {
+>>>>>>> d6e17f77e0f2793f108ad5e59212c9512f9da475
 				$data[ $field ] = null;
 				$data_format[]  = '';
 			} else {
@@ -484,11 +526,19 @@ function learn_press_update_user_item_field( array $fields = array(), $where = f
 		// Clear cache user item.
 		$lp_user_items_cache = new LP_User_Items_Cache();
 		$lp_user_items_cache->clean_user_item(
+<<<<<<< HEAD
 			array(
 				$updated_item->user_id,
 				$updated_item->item_id,
 				$updated_item->item_type,
 			)
+=======
+			[
+				$updated_item->user_id,
+				$updated_item->item_id,
+				$updated_item->item_type,
+			]
+>>>>>>> d6e17f77e0f2793f108ad5e59212c9512f9da475
 		);
 		// Clear cache userItemModel
 		$userItemModel = UserItemModel::find_user_item(
@@ -507,11 +557,17 @@ function learn_press_update_user_item_field( array $fields = array(), $where = f
 	/**
 	 * If there is some fields does not contain in the main table
 	 * then consider update them as metadata.
+<<<<<<< HEAD
 	 *
 	 * @comment by tungnx - 4.1.7.3
 	 */
 	/*
 	if ( $updated_item && $update_extra_fields_as_meta ) {
+=======
+	 * @comment by tungnx - 4.1.7.3
+	 */
+	/*if ( $updated_item && $update_extra_fields_as_meta ) {
+>>>>>>> d6e17f77e0f2793f108ad5e59212c9512f9da475
 		$extra_fields = array_diff_key( $fields, $table_fields );
 		if ( $extra_fields ) {
 			foreach ( $extra_fields as $meta_key => $meta_value ) {
@@ -532,7 +588,11 @@ function learn_press_update_user_item_field( array $fields = array(), $where = f
 		}
 	}*/
 
+<<<<<<< HEAD
 	// do_action( 'learn-press/updated-user-item-meta', $updated_item );
+=======
+	//do_action( 'learn-press/updated-user-item-meta', $updated_item );
+>>>>>>> d6e17f77e0f2793f108ad5e59212c9512f9da475
 
 	return $updated_item;
 }
@@ -662,7 +722,11 @@ if ( ! function_exists( 'learn_press_pre_get_avatar_callback' ) ) {
 	 *
 	 * @param string $avatar
 	 * @param string $id_or_email
+<<<<<<< HEAD
 	 * @param array  $args
+=======
+	 * @param array $args
+>>>>>>> d6e17f77e0f2793f108ad5e59212c9512f9da475
 	 *
 	 * @return string
 	 * @since 1.0.0
@@ -765,8 +829,12 @@ function learn_press_user_profile_picture_upload_dir( $width_user = true ) {
 	return $upload_dir;
 }
 
+<<<<<<< HEAD
 /*
 add_action( 'learn_press_before_purchase_course_handler', '_learn_press_before_purchase_course_handler', 10, 2 );
+=======
+/*add_action( 'learn_press_before_purchase_course_handler', '_learn_press_before_purchase_course_handler', 10, 2 );
+>>>>>>> d6e17f77e0f2793f108ad5e59212c9512f9da475
 function _learn_press_before_purchase_course_handler( $course_id, $cart ) {
 	// Redirect to login page if user is not logged in
 	if ( ! is_user_logged_in() ) {
@@ -808,8 +876,12 @@ function _learn_press_before_purchase_course_handler( $course_id, $cart ) {
 	}
 }*/
 
+<<<<<<< HEAD
 /*
 function learn_press_user_is( $role, $user_id = 0 ) {
+=======
+/*function learn_press_user_is( $role, $user_id = 0 ) {
+>>>>>>> d6e17f77e0f2793f108ad5e59212c9512f9da475
 	if ( ! $user_id ) {
 		$user = learn_press_get_current_user();
 	} else {
@@ -825,8 +897,12 @@ function learn_press_user_is( $role, $user_id = 0 ) {
 	return $role;
 }*/
 
+<<<<<<< HEAD
 /*
 function learn_press_profile_tab_edit_content( $current, $tab, $user ) {
+=======
+/*function learn_press_profile_tab_edit_content( $current, $tab, $user ) {
+>>>>>>> d6e17f77e0f2793f108ad5e59212c9512f9da475
 	learn_press_get_template(
 		'profile/tabs/edit.php',
 		array(
@@ -837,8 +913,12 @@ function learn_press_profile_tab_edit_content( $current, $tab, $user ) {
 	);
 }*/
 
+<<<<<<< HEAD
 /*
 function learn_press_update_user_option( $name, $value, $id = 0 ) {
+=======
+/*function learn_press_update_user_option( $name, $value, $id = 0 ) {
+>>>>>>> d6e17f77e0f2793f108ad5e59212c9512f9da475
 	if ( ! $id ) {
 		$id = get_current_user_id();
 	}
@@ -848,8 +928,12 @@ function learn_press_update_user_option( $name, $value, $id = 0 ) {
 	update_user_option( $id, $key, $options, true );
 }*/
 
+<<<<<<< HEAD
 /*
 function learn_press_delete_user_option( $name, $id = 0 ) {
+=======
+/*function learn_press_delete_user_option( $name, $id = 0 ) {
+>>>>>>> d6e17f77e0f2793f108ad5e59212c9512f9da475
 	if ( ! $id ) {
 		$id = get_current_user_id();
 	}
@@ -865,8 +949,12 @@ function learn_press_delete_user_option( $name, $id = 0 ) {
 	return false;
 }*/
 
+<<<<<<< HEAD
 /*
 function learn_press_get_user_option( $name, $id = 0 ) {
+=======
+/*function learn_press_get_user_option( $name, $id = 0 ) {
+>>>>>>> d6e17f77e0f2793f108ad5e59212c9512f9da475
 	if ( ! $id ) {
 		$id = get_current_user_id();
 	}
@@ -974,6 +1062,7 @@ function learn_press_update_user_profile_change_password() {
 function learn_press_get_avatar_thumb_size() {
 	$option = LP_Settings::get_option(
 		'avatar_dimensions',
+<<<<<<< HEAD
 		array(
 			'width'  => 250,
 			'height' => 250,
@@ -985,6 +1074,19 @@ function learn_press_get_avatar_thumb_size() {
 			'width'  => 250,
 			'height' => 250,
 		);
+=======
+		[
+			'width'  => 250,
+			'height' => 250,
+		]
+	);
+
+	if ( ! isset( $option['width'] ) || ! isset( $option['height'] ) ) {
+		$option = [
+			'width'  => 250,
+			'height' => 250,
+		];
+>>>>>>> d6e17f77e0f2793f108ad5e59212c9512f9da475
 	}
 
 	// For option get_avatar_url
@@ -1012,8 +1114,12 @@ function learn_press_get_course_thumbnail_dimensions() {
 	return $option;
 }
 
+<<<<<<< HEAD
 /*
 function learn_press_get_user_avatar( $user_id = 0, $size = '' ) {
+=======
+/*function learn_press_get_user_avatar( $user_id = 0, $size = '' ) {
+>>>>>>> d6e17f77e0f2793f108ad5e59212c9512f9da475
 	$user = learn_press_get_user( $user_id );
 
 	return $user->get_profile_picture( '', $size );
@@ -1030,8 +1136,12 @@ function learn_press_get_profile( $for_user = 0 ) {
 	return LP_Profile::instance( $for_user );
 }
 
+<<<<<<< HEAD
 /*
 function learn_press_remove_user_items( $user_id, $item_id, $course_id, $include_course = false ) {
+=======
+/*function learn_press_remove_user_items( $user_id, $item_id, $course_id, $include_course = false ) {
+>>>>>>> d6e17f77e0f2793f108ad5e59212c9512f9da475
 	global $wpdb;
 
 	settype( $item_id, 'array' );
@@ -1121,8 +1231,12 @@ function learn_press_user_profile_link( $user_id = 0, $tab = '' ) {
 	return apply_filters( 'learn_press_user_profile_link', $url, $user_id, $tab );
 }
 
+<<<<<<< HEAD
 /*
 function learn_press_create_user_item( $args = array(), $wp_error = false ) {
+=======
+/*function learn_press_create_user_item( $args = array(), $wp_error = false ) {
+>>>>>>> d6e17f77e0f2793f108ad5e59212c9512f9da475
 	global $wpdb;
 
 	$defaults = array(
@@ -1221,8 +1335,12 @@ function learn_press_create_user_item( $args = array(), $wp_error = false ) {
 	return $user_item;
 }*/
 
+<<<<<<< HEAD
 /*
 function learn_press_isset_user_item_for_quiz( $quiz_id, $course_id ) {
+=======
+/*function learn_press_isset_user_item_for_quiz( $quiz_id, $course_id ) {
+>>>>>>> d6e17f77e0f2793f108ad5e59212c9512f9da475
 	global $wpdb;
 
 	$query = $wpdb->prepare( "SELECT user_item_id FROM $wpdb->learnpress_user_items WHERE ref_id=%d AND item_id=%d", $course_id, $quiz_id );
@@ -1285,7 +1403,11 @@ function learn_press_rest_prepare_user_questions( array $question_ids = array(),
 			if ( $instantCheck || $status == 'completed' ) {
 				$theExplanation = $question->get_explanation();
 				$checked        = in_array( $id, $checkedQuestions );
+<<<<<<< HEAD
 				$hasExplanation = (bool) $theExplanation;
+=======
+				$hasExplanation = ! ! $theExplanation;
+>>>>>>> d6e17f77e0f2793f108ad5e59212c9512f9da475
 			}
 
 			$mark = $question->get_mark() ? $question->get_mark() : 1;
@@ -1412,7 +1534,11 @@ function learn_press_get_user_extra_profile_info( $user_id = 0 ) {
 	$extra_profile_info = get_the_author_meta( '_lp_extra_info', $user_id );
 	$social_fields      = learn_press_social_profiles();
 
+<<<<<<< HEAD
 	$user_socials = array();
+=======
+	$user_socials = [];
+>>>>>>> d6e17f77e0f2793f108ad5e59212c9512f9da475
 	foreach ( $social_fields as $key => $label ) {
 		$key                  = sanitize_key( $key );
 		$user_socials[ $key ] = '';
@@ -1607,7 +1733,11 @@ function lp_get_user_custom_register_fields( $user_id = 0 ) {
 }
 
 function lp_get_user_custom_fields() {
+<<<<<<< HEAD
 	$custom_fields = LP_Settings::get_option( 'register_profile_fields', array() );
+=======
+	$custom_fields = LP_Settings::get_option( 'register_profile_fields', [] );
+>>>>>>> d6e17f77e0f2793f108ad5e59212c9512f9da475
 
 	$output = array();
 
@@ -1648,7 +1778,12 @@ function learn_press_is_social_profile( $key ) {
  */
 function learn_press_get_user_extra_profile_fields() {
 	_deprecated_function( __FUNCTION__, '4.3.2' );
+<<<<<<< HEAD
 	return array();
+=======
+
+	return [];
+>>>>>>> d6e17f77e0f2793f108ad5e59212c9512f9da475
 
 	$socials = learn_press_social_profiles();
 
@@ -1682,8 +1817,12 @@ function learn_press_user_profile_data( $user ) {
 add_action( 'edit_user_profile', 'learn_press_user_profile_data', 1000 );
 add_action( 'show_user_profile', 'learn_press_user_profile_data', 1000 );
 
+<<<<<<< HEAD
 /*
 function learnpress_get_count_by_user( $user_id = '', $post_type = 'lp_course' ) {
+=======
+/*function learnpress_get_count_by_user( $user_id = '', $post_type = 'lp_course' ) {
+>>>>>>> d6e17f77e0f2793f108ad5e59212c9512f9da475
 	if ( empty( $user_id ) ) {
 		return false;
 	}

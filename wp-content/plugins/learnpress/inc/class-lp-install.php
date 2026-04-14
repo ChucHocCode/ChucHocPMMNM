@@ -58,11 +58,14 @@ if ( ! function_exists( 'LP_Install' ) ) {
 			if ( ! LP_Settings::is_created_tb_material_files() ) {
 				$this->create_table_learnpress_files();
 			}
+<<<<<<< HEAD
 
 			// Runtime migration for MCP API keys table.
 			if ( ! LP_Settings::is_created_tb_mcp_api_keys() ) {
 				$this->create_table_mcp_api_keys();
 			}
+=======
+>>>>>>> d6e17f77e0f2793f108ad5e59212c9512f9da475
 			ini_set( 'max_execution_time', LearnPress::$time_limit_default_of_sever );
 		}
 
@@ -133,12 +136,15 @@ if ( ! function_exists( 'LP_Install' ) ) {
 					$this->create_table_learnpress_files();
 				}
 
+<<<<<<< HEAD
 				// Ensure MCP API keys table exists for activation/upgrade flows.
 				// Keep this explicit guard in addition to tables-v4 config loading.
 				if ( ! LP_Settings::is_created_tb_mcp_api_keys() ) {
 					$this->create_table_mcp_api_keys();
 				}
 
+=======
+>>>>>>> d6e17f77e0f2793f108ad5e59212c9512f9da475
 				update_option( 'learn_press_check_tables', 'yes' );
 			} catch ( Throwable $e ) {
 				error_log( $e->getMessage() );
@@ -252,6 +258,7 @@ if ( ! function_exists( 'LP_Install' ) ) {
 		}
 
 		/**
+<<<<<<< HEAD
 		 * Create table learnpress_mcp_api_keys.
 		 *
 		 * @since 4.3.3
@@ -287,6 +294,8 @@ if ( ! function_exists( 'LP_Install' ) ) {
 		}
 
 		/**
+=======
+>>>>>>> d6e17f77e0f2793f108ad5e59212c9512f9da475
 		 * Create default pages for LP
 		 */
 		public static function create_pages() {

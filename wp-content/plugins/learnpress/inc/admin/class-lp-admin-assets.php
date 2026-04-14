@@ -198,6 +198,7 @@ class LP_Admin_Assets extends LP_Abstract_Assets {
 					array( 'jquery', 'underscore', 'utils', 'jquery-ui-sortable' )
 				),
 				'lp-admin'            => $lp_admin_js,
+<<<<<<< HEAD
 				'lp-admin-mcp-api-keys' => new LP_Asset_Key(
 					$this->url( 'src/js/admin/mcp-api-keys.js' ),
 					[ 'lp-load-ajax' ],
@@ -207,6 +208,8 @@ class LP_Admin_Assets extends LP_Abstract_Assets {
 					'',
 					[ 'strategy' => 'defer' ]
 				),
+=======
+>>>>>>> d6e17f77e0f2793f108ad5e59212c9512f9da475
 				'lp-admin-learnpress' => new LP_Asset_Key(
 					$this->url( 'js/dist/admin/learnpress' . self::$_min_assets . '.js' ),
 					array(
